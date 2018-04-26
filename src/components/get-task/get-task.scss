@@ -1,0 +1,30 @@
+get-task {
+    .content{
+        .task_img{
+            width: 100%;
+            text-align:center;
+            img{
+                width: 148px;
+                height: 148px;
+            }
+        }
+        p{
+            color:rgb(153,153,153);
+            font-size:14px;
+            text-align:center;
+        }
+        .button_box{
+            width: 100%;
+            text-align: center;
+            button{
+                width: 210px;
+                height: 44px;
+                color:#fff;
+                font-size:16px;
+                background-color:#3593f2;
+                border-radius: 43px;
+                box-shadow: 0 8px 35px 0 rgba(53,154,242,.49);
+            }
+        }
+    }
+}

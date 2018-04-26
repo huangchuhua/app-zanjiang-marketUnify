@@ -15,6 +15,10 @@ import { TabsSalelistPage } from '../pages/tabs/tabs-salelist';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+/*组件部分*/
+//注册组件
+import { ComponentsModule } from '../components/components.module';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{mode:'ios'/*配置android ios使用一套样式*/})
+    IonicModule.forRoot(MyApp,{mode:'ios'/*配置android ios使用一套样式*/}),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

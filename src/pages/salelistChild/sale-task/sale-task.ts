@@ -19,7 +19,6 @@ export class SaleTaskPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SaleTaskPage');
   }
 
 }
