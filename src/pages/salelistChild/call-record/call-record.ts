@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the HomeCallRecordPage page.
+ * Generated class for the CallRecordPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-home-call-record',
-  templateUrl: 'home-call-record.html',
+  selector: 'page-call-record',
+  templateUrl: 'call-record.html',
 })
-export class HomeCallRecordPage {
+export class CallRecordPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeCallRecordPage');
+    console.log('ionViewDidLoad CallRecordPage');
   }
 
 }

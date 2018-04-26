@@ -1,0 +1,46 @@
+page-salelist {
+    .header{
+        .header_icon_box{
+            position:absolute;
+            top:50%;
+            right:13px;
+            height: 22px;
+            transform:translateY(-50%);
+            .header_icon{
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+    .content{
+        .tabbar{
+            background-color:#fff;
+            border-bottom:none !important;
+            .tabs-ios-tab-min-height{
+                height:39px;
+            }
+            .tab-button[aria-selected="false"] .tab-button-text{
+                color:rgb(102,102,102);
+            }
+            //tab栏选中时高亮样式
+            .tab-button[aria-selected="true"] .tab-button-text{
+                color:#3593f2;
+            }
+            .tabs-ios-tab-font-size{
+                font-size:14px
+            }
+            //tab栏选中的高亮线
+           .tab-button[aria-selected=true] .button-effect{
+                display:block;
+                opacity:1;
+                width: 66px;
+                height: 2px;
+                top:39px;
+                left:50%;
+                transform: translateX(-50%);
+                border-radius: 0;
+                background-color:#3593f2;
+            }
+        }
+    }
+}

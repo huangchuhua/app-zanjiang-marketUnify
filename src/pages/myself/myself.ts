@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { TabsHomePage } from '../tabs/tabs-home';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-myself',
+  templateUrl: 'myself.html'
 })
-export class HomePage {
-  homePage:any = TabsHomePage;
+export class MyselfPage {
+
   constructor(public navCtrl: NavController) {
 
   }

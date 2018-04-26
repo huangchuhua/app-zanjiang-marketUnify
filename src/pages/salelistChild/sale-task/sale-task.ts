@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-home-sale-task',
-  templateUrl: 'home-sale-task.html',
+  selector: 'page-sale-task',
+  templateUrl: 'sale-task.html',
 })
-export class HomeSaleTaskPage {
+export class SaleTaskPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeSaleTaskPage');
+    console.log('ionViewDidLoad SaleTaskPage');
   }
 
 }

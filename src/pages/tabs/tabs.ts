@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
+import { MyselfPage } from '../myself/myself';
+import { IntegrationPage } from '../integration/integration';
+import { SalelistPage } from '../salelist/salelist';
 
 
 @Component({
+  selector:'page-tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
@@ -15,18 +16,18 @@ export class TabsPage {
   constructor() {
     this.tabRoots=[
       {
-        root:HomePage,
-        tabTitle:'Home',
-        tabIcon:'home'
+        root:SalelistPage,
+        tabTitle:'营销单',
+        tabIcon:'tab-salelist'
       },
       {
-        root:ContactPage,
-        tabTitle:'Contact',
-        tabIcon:'notifications'
+        root:IntegrationPage,
+        tabTitle:'积分',
+        tabIcon:'tab-integration'
       },{
-        root:AboutPage,
-        tabTitle:'About',
-        tabIcon:'document'
+        root:MyselfPage,
+        tabTitle:'我的',
+        tabIcon:'tab-myself'
       }
     ]
   }

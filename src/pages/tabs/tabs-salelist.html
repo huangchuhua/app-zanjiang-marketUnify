@@ -1,0 +1,3 @@
+<ion-tabs tabsPlacement="top" tabsHighlight=true>
+    <ion-tab *ngFor="let tabSalelist of tabSalelists" [root]="tabSalelist.root" tabTitle="{{tabSalelist.tabTitle}}"></ion-tab>
+</ion-tabs>

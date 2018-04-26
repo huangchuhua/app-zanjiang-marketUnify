@@ -1,0 +1,27 @@
+page-tabs {
+    .ion-tab-icon-base {
+        width: 24px !important;
+        height: 24px !important;
+        // padding: 4px 4px 2px;
+    }
+    .ion-tab-icon-md-base {
+        min-width: 0 !important;
+        height: 24px;
+    }
+    $tabImageName: 'salelist' 'integration' 'myself';
+    @for $i from 1 to 4 {
+        //for ios
+        .ion-ios-tab-#{nth($tabImageName, $i)} {
+            @extend .ion-tab-icon-base;
+            content: url("../../assets/imgs/common/#{nth($tabImageName, $i)}_on@2x.png");
+        }
+        .ion-ios-tab-#{nth($tabImageName, $i)}-outline {
+            @extend .ion-tab-icon-base;
+            content: url("../../assets/imgs/common/#{nth($tabImageName, $i)}_off@2x.png");
+        }
+    }
+    .ion-ios-tab-task,.ion-ios-tab-task-outline,.ion-ios-tab-master,.ion-ios-tab-master-outline{
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
