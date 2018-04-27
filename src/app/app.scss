@@ -126,16 +126,38 @@ img {
     // display: block;
 }
 /*初始化样式结束*/
+
+//主题色
+$themeColor: #3593f2;
+
 /*头部样式*/
 .toolbar-background-ios{
-    background:#3593f2;
+    background:$themeColor;
 }
 .toolbar-title-ios{
     color:rgb(254,254,254);
     font-size:17px;
     font-weight:400;
 }
+
 /*底部tab样式*/
 .tabs-ios .tab-button-icon{
     min-width: 24px;
+}
+
+/*外呼结果按钮样式*/
+//有意向
+.accept_btn{
+    color:rgb(44,186,77);
+    border:1px solid rgb(44,186,77);
+}
+//无意向
+.unaccept_btn{
+    color:rgb(153,153,153);
+    border:1px solid rgb(153,153,153);
+}
+//营销成功
+.success_btn{
+    color:$themeColor;
+    border:1px solid $themeColor;
 }

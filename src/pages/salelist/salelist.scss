@@ -24,7 +24,7 @@ page-salelist {
             }
             //tab栏选中时高亮样式
             .tab-button[aria-selected="true"] .tab-button-text{
-                color:#3593f2;
+                color:$themeColor;
             }
             .tabs-ios-tab-font-size{
                 font-size:14px
@@ -39,8 +39,11 @@ page-salelist {
                 left:50%;
                 transform: translateX(-50%);
                 border-radius: 0;
-                background-color:#3593f2;
+                background-color:$themeColor;
             }
+        }
+        .scroll-content{
+            margin-top:41px !important;
         }
     }
 }
