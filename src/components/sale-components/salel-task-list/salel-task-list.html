@@ -1,17 +1,15 @@
 <!-- Generated template for the SalelTaskListComponent component -->
 <div>
-  <div class="list">
+  <div class="list" #list>
     <div class="item">
       <div class="title">
         <div class="name_box">
           <span class="name">24568745632@163.com</span>
           <button type="button" class="title_btn success_btn">营销成功</button>
         </div>
-        <div class="arrow_btn">
-          <img src="../../../assets/imgs/saleActivity/Marketing_list_icon_down@2x.png" alt="图片">
-        </div>
+        <div class="arrow_btn arrow_down" (click)="upAndDown('0')"></div>
       </div>
-      <div class="content">
+      <div class="content" #content>
         <p>
           <span>联系号码</span>
           <span>1346663332222</span>
@@ -48,11 +46,9 @@
           <span class="name">24568745632@163.com</span>
           <button type="button" class="title_btn unaccept_btn">无意向</button>
         </div>
-        <div class="arrow_btn">
-          <img src="../../../assets/imgs/saleActivity/Marketing_list_icon_down@2x.png" alt="图片">
-        </div>
+        <div class="arrow_btn arrow_down" (click)="upAndDown('1')"></div>
       </div>
-      <div class="content">
+      <div class="content" #content>
         <p>
           <span>联系号码</span>
           <span>1346663332222</span>
@@ -89,11 +85,9 @@
           <span class="name">24568745632@163.com</span>
           <button type="button" class="title_btn accept_btn">有意向</button>
         </div>
-        <div class="arrow_btn">
-          <img src="../../../assets/imgs/saleActivity/Marketing_list_icon_down@2x.png" alt="图片">
-        </div>
+        <div class="arrow_btn arrow_down" (click)="upAndDown('2')"></div>
       </div>
-      <div class="content">
+      <div class="content" #content>
         <p>
           <span>联系号码</span>
           <span>1346663332222</span>

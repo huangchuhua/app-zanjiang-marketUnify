@@ -11,5 +11,5 @@ export class SalelistPage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  
 }
