@@ -1,4 +1,8 @@
 import { Component,ViewChildren,ElementRef,Renderer,QueryList} from '@angular/core';
+import { ModalController } from 'ionic-angular';
+import { FeedbackListPage } from '../../../pages/feedback-list/feedback-list';
+
+
 
 /**
  * Generated class for the SalelTaskListComponent component.
@@ -14,14 +18,18 @@ export class SalelTaskListComponent {
 
   @ViewChildren('list') listEle:QueryList<ElementRef>;
 
-  constructor(el: ElementRef, renderer: Renderer) {
+  constructor(
+    el: ElementRef, 
+    renderer: Renderer,
+    public modalCtrl: ModalController
+  ) {
   }
+
   //显示与隐藏更多字段点击事件
   upAndDown(id){
     let itemArr=this.listEle.last.nativeElement.children;
     let arrow_btn=itemArr[id].children[0].children[1];
     let content=itemArr[id].children[1];
-    console.log(arrow_btn,content);
     
     if(arrow_btn.classList.contains("arrow_down")){
       arrow_btn.classList.remove("arrow_down");
@@ -35,7 +43,10 @@ export class SalelTaskListComponent {
       content.style.height="95px";
     }
   }
-  ngOnInit(){
-    // console.log(999)
+  
+  /**回单事件 */
+  feedbackList(){
+    let modal=this.modalCtrl.create(FeedbackListPage);
+    modal.present();
   }
 }

@@ -15,7 +15,8 @@ import { TabsSalelistPage } from '../pages/tabs/tabs-salelist';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-/*组件部分*/
+import {FeedbackListPage } from '../pages/feedback-list/feedback-list';
+
 //注册组件
 import { ComponentsModule } from '../components/components.module';
 
@@ -28,7 +29,8 @@ import { ComponentsModule } from '../components/components.module';
     TabsPage,
     CallRecordPage,
     SaleTaskPage,
-    TabsSalelistPage
+    TabsSalelistPage,
+    FeedbackListPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { ComponentsModule } from '../components/components.module';
     TabsPage,
     CallRecordPage,
     SaleTaskPage,
-    TabsSalelistPage
+    TabsSalelistPage,
+    FeedbackListPage
   ],
   providers: [
     StatusBar,
