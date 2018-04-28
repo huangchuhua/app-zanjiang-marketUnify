@@ -1,0 +1,36 @@
+<!--
+  Generated template for the CallStatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>外呼结果</ion-title>
+    <div class="title_btn">
+        <div class="back_btn" (click)="goBack()"></div>
+    </div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list radio-group [(ngModel)]="checkedVal">
+    <ion-item>
+      <ion-label>有意向</ion-label>
+      <ion-radio checked="true" value="有意向"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>无意向</ion-label>
+      <ion-radio value="无意向"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>营销成功</ion-label>
+      <ion-radio value="营销成功"></ion-radio>
+    </ion-item>
+  </ion-list>
+</ion-content>
