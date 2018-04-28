@@ -1,6 +1,9 @@
 import { Component,ViewChildren,ElementRef,Renderer,QueryList} from '@angular/core';
 import { ModalController } from 'ionic-angular';
+//回单页面
 import { FeedbackListPage } from '../../../pages/feedback-list/feedback-list';
+//任务详情页面
+import { TaskDetailsPage } from '../../../pages/task-details/task-details';
 
 
 
@@ -46,7 +49,13 @@ export class SalelTaskListComponent {
   
   /**回单事件 */
   feedbackList(){
-    let modal=this.modalCtrl.create(FeedbackListPage);
-    modal.present();
+    let feedbackModal=this.modalCtrl.create(FeedbackListPage);
+    feedbackModal.present();
+  }
+
+  /**查看任务详情 */
+  getDetails(){
+    let taskDetailsModal=this.modalCtrl.create(TaskDetailsPage);
+    taskDetailsModal.present();
   }
 }

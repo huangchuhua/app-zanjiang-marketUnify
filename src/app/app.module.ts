@@ -20,6 +20,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {FeedbackListPage } from '../pages/feedback-list/feedback-list';
 //外呼结果页面
 import { CallStatePage } from '../pages/call-state/call-state';
+//任务详情页面
+import { TaskDetailsPage } from '../pages/task-details/task-details';
+
 //注册组件
 import { ComponentsModule } from '../components/components.module';
 
@@ -34,7 +37,8 @@ import { ComponentsModule } from '../components/components.module';
     SaleTaskPage,
     TabsSalelistPage,
     FeedbackListPage,
-    CallStatePage
+    CallStatePage,
+    TaskDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,8 @@ import { ComponentsModule } from '../components/components.module';
     SaleTaskPage,
     TabsSalelistPage,
     FeedbackListPage,
-    CallStatePage
+    CallStatePage,
+    TaskDetailsPage
   ],
   providers: [
     StatusBar,
