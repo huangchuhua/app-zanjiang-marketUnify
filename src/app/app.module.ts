@@ -24,6 +24,8 @@ import { CallStatePage } from '../pages/call-state/call-state';
 import { TaskDetailsPage } from '../pages/task-details/task-details';
 //全部任务弹层页面
 import { TaskPopoverPage } from '../pages/task-popover/task-popover';
+//外呼记录详情
+import { CallRecordDetailsPage } from '../pages/call-record-details/call-record-details';
 
 //注册组件
 import { ComponentsModule } from '../components/components.module';
@@ -41,7 +43,8 @@ import { ComponentsModule } from '../components/components.module';
     FeedbackListPage,
     CallStatePage,
     TaskDetailsPage,
-    TaskPopoverPage
+    TaskPopoverPage,
+    CallRecordDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,8 @@ import { ComponentsModule } from '../components/components.module';
     FeedbackListPage,
     CallStatePage,
     TaskDetailsPage,
-    TaskPopoverPage
+    TaskPopoverPage,
+    CallRecordDetailsPage
   ],
   providers: [
     StatusBar,

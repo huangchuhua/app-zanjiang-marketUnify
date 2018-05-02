@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ModalController } from 'ionic-angular';
+//外呼记录详情页面
+import { CallRecordDetailsPage } from '../../../pages/call-record-details/call-record-details';
 
 /**
  * Generated class for the CallRecordListComponent component.
@@ -12,11 +15,12 @@ import { Component } from '@angular/core';
 })
 export class CallRecordListComponent {
 
-  text: string;
+  constructor(public modalCtrl:ModalController) {
+  }
 
-  constructor() {
-    console.log('Hello CallRecordListComponent Component');
-    this.text = 'Hello World';
+  checkDetails(){
+    let modal = this.modalCtrl.create(CallRecordDetailsPage);
+    modal.present();
   }
 
 }

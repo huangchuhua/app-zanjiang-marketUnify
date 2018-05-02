@@ -22,6 +22,7 @@ export class TaskPopoverPage {
   ionViewDidLoad() {
   }
   close(){
+    console.log(110)
     this.viewCtrl.dismiss();
   }
 
