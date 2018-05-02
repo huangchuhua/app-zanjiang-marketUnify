@@ -22,6 +22,8 @@ import {FeedbackListPage } from '../pages/feedback-list/feedback-list';
 import { CallStatePage } from '../pages/call-state/call-state';
 //任务详情页面
 import { TaskDetailsPage } from '../pages/task-details/task-details';
+//全部任务弹层页面
+import { TaskPopoverPage } from '../pages/task-popover/task-popover';
 
 //注册组件
 import { ComponentsModule } from '../components/components.module';
@@ -38,7 +40,8 @@ import { ComponentsModule } from '../components/components.module';
     TabsSalelistPage,
     FeedbackListPage,
     CallStatePage,
-    TaskDetailsPage
+    TaskDetailsPage,
+    TaskPopoverPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { ComponentsModule } from '../components/components.module';
     TabsSalelistPage,
     FeedbackListPage,
     CallStatePage,
-    TaskDetailsPage
+    TaskDetailsPage,
+    TaskPopoverPage
   ],
   providers: [
     StatusBar,

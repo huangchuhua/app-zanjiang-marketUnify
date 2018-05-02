@@ -1,0 +1,17 @@
+page-task-popover {
+    .list-header-ios{
+        color:rgb(102,102,102);
+        font-size:15px;
+        border-bottom:0.55px solid rgb(240,240,240);
+    }
+    .item-ios{
+        color:rgb(102,102,102);
+        font-size:15px;
+    }
+    .list-ios .item-block .item-inner{
+        border-bottom:0.55px solid rgb(240,240,240);
+    }
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+        border-bottom:0.55px solid rgb(240,240,240);
+    }
+}
