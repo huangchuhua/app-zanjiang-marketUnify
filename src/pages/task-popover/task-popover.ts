@@ -20,6 +20,9 @@ export class TaskPopoverPage {
   }
 
   ionViewDidLoad() {
+    //隐藏弹出层的箭头
+    let arrowEle=document.querySelector(".popover-arrow");
+    arrowEle["style"].opacity=0;
   }
   close(){
     console.log(110)

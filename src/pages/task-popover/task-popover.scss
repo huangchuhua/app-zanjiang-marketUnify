@@ -4,9 +4,13 @@ page-task-popover {
         font-size:15px;
         border-bottom:0.55px solid rgb(240,240,240);
     }
+    .list-header-ios .item-inner{
+        padding-left:16px;
+    }
     .item-ios{
         color:rgb(102,102,102);
         font-size:15px;
+        padding-left:0 !important;
     }
     .list-ios .item-block .item-inner{
         border-bottom:0.55px solid rgb(240,240,240);
@@ -14,4 +18,8 @@ page-task-popover {
     .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
         border-bottom:0.55px solid rgb(240,240,240);
     }
+    .item-ios.item-block .item-inner{
+        padding-left:16px;
+    }
+    
 }
