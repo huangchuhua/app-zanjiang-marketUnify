@@ -15,7 +15,8 @@ import { ViewController } from 'ionic-angular';
   templateUrl: 'task-popover.html',
 })
 export class TaskPopoverPage {
-
+  //全部任务选择项
+  taskListData:string=JSON.parse(localStorage.getItem("taskListData"))||"";
   constructor(public viewCtrl:ViewController) {
   }
 
@@ -23,10 +24,14 @@ export class TaskPopoverPage {
     //隐藏弹出层的箭头
     let arrowEle=document.querySelector(".popover-arrow");
     arrowEle["style"].opacity=0;
+    console.log("初始值："+this.taskListData);
   }
-  close(){
-    console.log(110)
-    this.viewCtrl.dismiss();
+  //选择后关闭弹出窗
+  close(event:any){
+    localStorage.setItem("taskListData",JSON.stringify(this.taskListData));
+    console.log(this.taskListData);
+    setTimeout(()=>{
+      this.viewCtrl.dismiss();
+    },500)
   }
-
 }

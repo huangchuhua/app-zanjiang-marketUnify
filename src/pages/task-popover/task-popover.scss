@@ -1,7 +1,7 @@
 page-task-popover {
     .list-header-ios{
-        color:rgb(102,102,102);
-        font-size:15px;
+        // color:rgb(102,102,102);
+        // font-size:15px;
         border-bottom:0.55px solid rgb(240,240,240);
     }
     .list-header-ios .item-inner{
@@ -21,5 +21,10 @@ page-task-popover {
     .item-ios.item-block .item-inner{
         padding-left:16px;
     }
-    
+    ion-list-header{
+        min-height:39px;
+    }
+    .item-block{
+        min-height:39px;
+    }
 }

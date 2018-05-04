@@ -10,35 +10,35 @@
 
 
 <ion-content>
-  <ion-list radio-group>
+  <ion-list radio-group [(ngModel)]="taskListData">
       <ion-list-header>全部任务</ion-list-header>
-      <ion-item (click)="close()">
-        <ion-label>9M/120</ion-label>
-        <ion-radio value="9M/120"></ion-radio>
-      </ion-item>
-      <ion-item (click)="close()">
+      <ion-item>
         <ion-label>6M/90</ion-label>
-        <ion-radio value="6M/90"></ion-radio>
+        <ion-radio value="6M/90" (click)="close($event)" [checked]="taskListData=='6M/90'"></ion-radio>
       </ion-item>
-      <ion-item (click)="close()">
+      <ion-item>
+        <ion-label>9M/120</ion-label>
+        <ion-radio value="9M/120" (click)="close($event)" [checked]="taskListData=='9M/120'"></ion-radio>
+      </ion-item>
+      <ion-item>
         <ion-label>MPLS VPN</ion-label>
-        <ion-radio value="MPLS VPN"></ion-radio>
+        <ion-radio value="MPLS VPN" (click)="close($event)" [checked]="taskListData=='MPLS VPN'"></ion-radio>
       </ion-item>
-      <ion-item (click)="close()">
+      <ion-item>
         <ion-label>光纤</ion-label>
-        <ion-radio value="光纤"></ion-radio>
+        <ion-radio value="光纤" (click)="close($event)" [checked]="taskListData=='光纤'"></ion-radio>
       </ion-item>
-      <ion-item (click)="close()">
+      <ion-item>
         <ion-label>手机套餐</ion-label>
-        <ion-radio value="手机套餐"></ion-radio>
+        <ion-radio value="手机套餐" (click)="close($event)" [checked]="taskListData=='手机套餐'"></ion-radio>
       </ion-item>
-      <ion-item (click)="close()">
+      <ion-item>
           <ion-label>集团服务</ion-label>
-          <ion-radio value="集团服务"></ion-radio>
+          <ion-radio value="集团服务" (click)="close($event)" [checked]="taskListData=='集团服务'"></ion-radio>
       </ion-item>
-      <ion-item (click)="close()">
+      <ion-item>
           <ion-label>私人定制</ion-label>
-          <ion-radio value="私人定制"></ion-radio>
+          <ion-radio value="私人定制" (click)="close($event)" [checked]="taskListData=='私人定制'"></ion-radio>
       </ion-item>
     </ion-list>
 </ion-content>
