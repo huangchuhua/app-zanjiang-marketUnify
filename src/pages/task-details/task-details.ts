@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, ModalController, ViewController, NavParams } from 'ionic-angular';
+
+import { FeedbackListPage } from '../../pages/feedback-list/feedback-list';
 
 /**
  * Generated class for the TaskDetailsPage page.
@@ -15,11 +17,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TaskDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public modalCtrl: ModalController,
+    public viewCtrl: ViewController,
+    public navParams: NavParams
+  ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TaskDetailsPage');
   }
-
+  //头部导航栏的返回
+  goBack(){
+    this.viewCtrl.dismiss();
+  }
+  //跳转到回单页面
+  feedbackList(){
+    let modal=this.modalCtrl.create(FeedbackListPage);
+    modal.present();
+  }
 }

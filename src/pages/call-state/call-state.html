@@ -20,17 +20,17 @@
   <ion-list radio-group [(ngModel)]="checkedVal">
     <ion-item>
       <ion-label>有意向</ion-label>
-      <ion-radio checked="true" value="有意向"></ion-radio>
+      <ion-radio [checked]="checkedVal=='有意向'" value="有意向"></ion-radio>
     </ion-item>
   
     <ion-item>
       <ion-label>无意向</ion-label>
-      <ion-radio value="无意向"></ion-radio>
+      <ion-radio [checked]="checkedVal=='无意向'" value="无意向"></ion-radio>
     </ion-item>
   
     <ion-item>
       <ion-label>营销成功</ion-label>
-      <ion-radio value="营销成功"></ion-radio>
+      <ion-radio [checked]="checkedVal=='营销成功'" value="营销成功"></ion-radio>
     </ion-item>
   </ion-list>
 </ion-content>

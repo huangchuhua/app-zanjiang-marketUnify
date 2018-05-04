@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, ModalController } from 'ionic-angular';
+import { IonicPage,NavParams,ViewController } from 'ionic-angular';
 
 
 import { FeedbackListPage } from '../feedback-list/feedback-list';
@@ -17,8 +17,9 @@ import { FeedbackListPage } from '../feedback-list/feedback-list';
   templateUrl: 'call-state.html',
 })
 export class CallStatePage {
-  checkedVal:string ="有意向";
-  constructor(public modalCtrl:ModalController) {
+  checkedVal:string;
+  constructor(public params:NavParams,public viewCtrl:ViewController) {
+    this.checkedVal=params.get("checkedVal");
   }
 
   ionViewDidLoad() {
@@ -26,11 +27,6 @@ export class CallStatePage {
   }
   //头部导航栏的返回
   goBack(){
-    let modal=this.modalCtrl.create(FeedbackListPage,{checkedVal:this.checkedVal});
-    modal.present();
-  }
-
-  ionChange(){
-    console.log(this.checkedVal)
+    this.viewCtrl.dismiss({checkedVal:this.checkedVal});
   }
 }

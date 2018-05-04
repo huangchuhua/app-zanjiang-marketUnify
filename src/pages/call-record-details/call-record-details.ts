@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams,ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the CallRecordDetailsPage page.
@@ -15,11 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CallRecordDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public viewCtrl: ViewController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CallRecordDetailsPage');
   }
-
+   //头部导航栏的返回
+   goBack(){
+    this.viewCtrl.dismiss();
+  }
 }
