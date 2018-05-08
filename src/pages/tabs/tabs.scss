@@ -13,11 +13,11 @@ page-tabs {
         //for ios
         .ion-ios-tab-#{nth($tabImageName, $i)} {
             @extend .ion-tab-icon-base;
-            content: url("../../assets/imgs/common/#{nth($tabImageName, $i)}_on@2x.png");
+            content: url("../assets/imgs/common/#{nth($tabImageName, $i)}_on@2x.png");
         }
         .ion-ios-tab-#{nth($tabImageName, $i)}-outline {
             @extend .ion-tab-icon-base;
-            content: url("../../assets/imgs/common/#{nth($tabImageName, $i)}_off@2x.png");
+            content: url("../assets/imgs/common/#{nth($tabImageName, $i)}_off@2x.png");
         }
     }
     .ion-ios-tab-task,.ion-ios-tab-task-outline,.ion-ios-tab-master,.ion-ios-tab-master-outline{
