@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, ModalController, NavParams } from 'ionic-angular';
 
+//外呼记录详情页面
+import { CallRecordDetailsPage } from '../../../pages/call-record-details/call-record-details';
 /**
  * Generated class for the CallRecordPage page.
  *
@@ -15,11 +17,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CallRecordPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modalCtrl: ModalController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CallRecordPage');
+  }
+
+  checkDetails(){
+    let modal = this.modalCtrl.create(CallRecordDetailsPage);
+    modal.present();
   }
 
 }

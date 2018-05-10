@@ -27,9 +27,6 @@ import { TaskPopoverPage } from '../pages/task-popover/task-popover';
 //外呼记录详情
 import { CallRecordDetailsPage } from '../pages/call-record-details/call-record-details';
 
-//注册组件
-import { ComponentsModule } from '../components/components.module';
-
 @NgModule({
   declarations: [
     MyApp,
@@ -49,7 +46,6 @@ import { ComponentsModule } from '../components/components.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,{mode:'ios'/*配置android ios使用一套样式*/}),
-    ComponentsModule,
     FormsModule
   ],
   bootstrap: [IonicApp],
